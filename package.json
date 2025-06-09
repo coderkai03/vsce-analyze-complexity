@@ -2,7 +2,7 @@
   "name": "analyze-complexity",
   "displayName": "Analyze Complexity",
   "description": "Analyze the time and space complexity of TS/JS/PY functions",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.95.0"
   },
