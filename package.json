@@ -1,6 +1,6 @@
 {
-  "name": "word-count",
-  "displayName": "Word Count",
+  "name": "analyze-complexity",
+  "displayName": "Analyze Complexity",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "word-count.helloWorld",
-        "title": "Hello World"
+        "command": "analyze-complexity.analyzeFunctionComplexity",
+        "title": "Analyze Time/Space Complexity"
       }
     ]
   },
