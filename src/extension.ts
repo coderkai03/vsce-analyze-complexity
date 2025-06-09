@@ -20,7 +20,7 @@ export function activate(context: vscode.ExtensionContext) {
 	// This line of code will only be executed once when your extension is activated
 	console.log('Congratulations, your extension "analyze-complexity" is now active!');
 
-	// Create and register the CodeLens provider
+	// Create and register the CodeLens provide
 	const codeLensProvider = new ComplexityCodeLensProvider();
 	const codeLensDisposable = vscode.languages.registerCodeLensProvider(
 		{ scheme: 'file', language: '*' },
@@ -65,8 +65,8 @@ export function activate(context: vscode.ExtensionContext) {
 					`Complexity analysis complete for ${functionName}: ${analysis.timeComplexity} time, ${analysis.spaceComplexity} space`
 				);
 			} catch (error) {
-				console.error('Error in analyzeFunctionComplexity:', error);
-				vscode.window.showErrorMessage(`Error analyzing function complexity: ${error}`);
+				// console.error('Error in analyzeFunctionComplexity:', error);
+				// vscode.window.showErrorMessage(`Error analyzing function complexity: ${error}`);
 			}
 		}
 	);
